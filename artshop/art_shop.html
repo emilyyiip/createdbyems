@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Art Shop | Cecilia</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Lato:wght@300;400&family=Caveat:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- Your original/global site styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Art shop styles only -->
+  <link rel="stylesheet" href="art_shop.css" />
+</head>
+
+<body>
+  <main class="artshop-page">
+
+    <!-- SIDEBAR -->
+    <aside class="shop-sidebar">
+      <a class="shop-sidebar-back" href="/Users/emilyyip/Desktop/createdbyems/home.html">
+        <span aria-hidden="true">←</span>
+        Home
+      </a>
+
+      <div class="shop-sidebar-title">Stationery Shop</div>
+
+      <button class="shop-nav-item active" id="nav-june" type="button" onclick="showCollection('june')">
+        <span class="shop-nav-dash"></span>
+        June 2026
+      </button>
+
+      <a class="shop-nav-item" href="https://etsy.com/shop/yourshop" target="_blank">
+        <span class="shop-nav-dash"></span>
+        Etsy
+      </a>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <section class="shop-main">
+
+      <!-- JUNE 2026 COLLECTION -->
+      <div class="shop-sub active" id="col-june">
+        <h1 class="shop-main-title">June 2026</h1>
+
+        <div class="header-image">
+          <img src="/Users/emilyyip/Desktop/createdbyems/media/ornament.png" alt="Decorative line ornament" />
+        </div>
+
+        <div class="gallery-grid">
+
+          <article class="gallery-item">
+            <div class="gallery-thumb">
+              <img src="/Users/emilyyip/Desktop/createdbyems/artshop/art_files/june_2026/Sf_postcard.png" alt="Art" />
+            </div>
+            <h2 class="gallery-name">San Francisco Postcard</h2>
+          </article>
+
+          <article class="gallery-item">
+            <div class="gallery-thumb">
+              <img src="/Users/emilyyip/Desktop/createdbyems/artshop/art_files/june_2026/Sd_postcard.png" alt="Artwork 2" />
+            </div>
+            <h2 class="gallery-name">San Diego Postcard</h2>
+            <p class="gallery-price">$00.00</p>
+          </article>
+
+          <article class="gallery-item">
+            <div class="gallery-thumb">
+              <img src="/Users/emilyyip/Desktop/createdbyems/artshop/art_files/june_2026/Picnic_postcard.png" alt="Picnic Postcard" />
+            </div>
+            <h2 class="gallery-name">Piece Name</h2>
+            <p class="gallery-price">$00.00</p>
+          </article>
+
+          <article class="gallery-item">
+            <div class="gallery-thumb">
+              <img src="media/art-4.jpg" alt="Artwork 4" />
+            </div>
+            <h2 class="gallery-name">Piece Name</h2>
+            <p class="gallery-price">$00.00</p>
+          </article>
+
+          <article class="gallery-item">
+            <div class="gallery-thumb">
+              <img src="media/art-5.jpg" alt="Artwork 5" />
+            </div>
+            <h2 class="gallery-name">Piece Name</h2>
+            <p class="gallery-price">$00.00</p>
+          </article>
+
+          <article class="gallery-item">
+            <div class="gallery-thumb">
+              <img src="media/art-6.jpg" alt="Artwork 6" />
+            </div>
+            <h2 class="gallery-name">Piece Name</h2>
+            <p class="gallery-price">$00.00</p>
+          </article>
+
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Optional shared JS from your main site -->
+  <script src="script.js"></script>
+
+  <!-- Art shop JS only -->
+  <script src="artshop.js"></script>
+</body>
+
+</html>
