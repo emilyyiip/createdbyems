@@ -24,7 +24,6 @@ function showCollection(id) {
 
 /* ═══════════════════════════════════════════
    ART SHOP — wall gallery + modal JS
-   Load this before </body> in your HTML
    ═══════════════════════════════════════════ */
 
 /**
@@ -225,4 +224,31 @@ function closeModalOutside(e) {
 
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') closeModal();
+});
+
+// Welcome Popup
+window.addEventListener('load', function () {
+  setTimeout(function () {
+    document.getElementById('welcomeOverlay').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }, 300);
+});
+
+function closeWelcome(e) {
+  if (e.target === document.getElementById('welcomeOverlay')) {
+    dismissWelcome();
+  }
+}
+
+function closeWelcomeBtn() {
+  dismissWelcome();
+}
+
+function dismissWelcome() {
+  document.getElementById('welcomeOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') dismissWelcome();
 });

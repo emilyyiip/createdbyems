@@ -1,112 +1,127 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Created by Ems Stationery Shop</title>
- 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Lato:wght@300;400&family=Caveat:wght@400;500&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Lato:wght@300;400&family=Caveat:wght@400;500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="art_shop.css" />
 </head>
- 
+
 <body>
   <main class="artshop-page">
- 
+
     <!-- SIDEBAR -->
     <aside class="shop-sidebar">
       <a class="shop-sidebar-back" href="/Users/emilyyip/Desktop/createdbyems/home.html">&#8592; Home</a>
- 
-      <div class="shop-sidebar-title">Stationery Shop</div>
- 
+
+      <div class="shop-sidebar-title">Created by Ems Shop</div>
+
       <button class="shop-nav-item active" id="nav-june" type="button" onclick="showCollection('june')">
         <span class="shop-nav-dash"></span>
         June 2026
       </button>
- 
+
+      <a class="shop-nav-item" href="https://etsy.com/shop/yourshop" target="_blank">
+        <span class="shop-nav-dash"></span>
+        Photo Gallery
+      </a>
+
       <a class="shop-nav-item" href="https://etsy.com/shop/yourshop" target="_blank">
         <span class="shop-nav-dash"></span>
         Etsy
       </a>
- 
-      <a class="shop-nav-item" href="blog.html">
-        <span class="shop-nav-dash"></span>
-        About
-      </a>
- 
+
       <img class="thank-you" src="art_files/june_2026/Cbe-back-business.png">
+
     </aside>
- 
+
     <!-- MAIN CONTENT -->
     <section class="shop-main">
- 
+
       <!-- JUNE 2026 COLLECTION -->
       <div class="shop-sub active" id="col-june">
         <h1 class="shop-main-title">June 2026</h1>
- 
+
         <div class="wall-gallery">
- 
+
           <img class="wall-base" src="art_files/june_2026/Frame_Art.png" alt="Gallery Wall">
- 
+
           <!-- TOP LEFT HORIZONTAL FRAME -->
-          <button class="wall-art art-1 horizontal-img"
-            data-title="Summer Picnic Postcard"
-            data-description="A cute summer picnic."
-            data-layout="horizontal"
-            data-price="$18.00"
-            data-collection="June 2026"
-            data-front="art_files/june_2026/Picnic_postcard.png"
-            data-back="art_files/june_2026/Back_postcard_hor.png"
-            onclick="openModal(this)">
+          <button class="wall-art art-1 horizontal-img" data-title="Summer Picnic Postcard"
+            data-description="A cute summer picnic." data-layout="horizontal" data-price="$18.00"
+            data-collection="June 2026" data-front="art_files/june_2026/Picnic_postcard.png"
+            data-back="art_files/june_2026/Back_postcard_hor.png" onclick="openModal(this)">
             <img src="art_files/june_2026/Picnic_postcard.png" alt="picnic" onerror="this.style.display='none'">
           </button>
- 
+
           <!-- TOP RIGHT VERTICAL FRAME -->
-          <button class="wall-art art-2"
-            data-title="San Diego Postcard"
-            data-description="Landmarks of San Diego."
-            data-price="$8.00"
-            data-collection="June 2026"
-            data-front="art_files/june_2026/Sd_postcard.png"
-            data-back="art_files/june_2026/Back_postcard.png"
-            onclick="openModal(this)">
+          <button class="wall-art art-2" data-title="San Diego Postcard" data-description="Landmarks of San Diego."
+            data-price="$8.00" data-collection="June 2026" data-front="art_files/june_2026/Sd_postcard.png"
+            data-back="art_files/june_2026/Back_postcard.png" onclick="openModal(this)">
             <img src="art_files/june_2026/Sd_postcard.png" alt="San Diego Postcard" onerror="this.style.display='none'">
           </button>
- 
+
           <!-- BOTTOM LEFT FRAME -->
-          <button class="wall-art art-3"
-            data-title="San Francisco Postcard"
-            data-description="Landmarks of San Francisco."
-            data-price="$9.00"
-            data-collection="June 2026"
-            data-front="art_files/june_2026/Sf_postcard.png"
-            data-back="art_files/june_2026/Back_postcard.png"
+          <button class="wall-art art-3" data-title="San Francisco Postcard"
+            data-description="Landmarks of San Francisco." data-price="$9.00" data-collection="June 2026"
+            data-front="art_files/june_2026/Sf_postcard.png" data-back="art_files/june_2026/Back_postcard.png"
             onclick="openModal(this)">
             <img src="art_files/june_2026/Sf_postcard.png" alt="sf Postcard" onerror="this.style.display='none'">
           </button>
- 
+
           <!-- BOTTOM RIGHT FRAME -->
-          <button class="wall-art art-4"
-            data-title="Strawberry Shortcake Recipe"
-            data-description="Make a strawberry shortcake!"
-            data-price="$8.00"
-            data-collection="June 2026"
+          <button class="wall-art art-4" data-title="Strawberry Shortcake Recipe"
+            data-description="Make a strawberry shortcake!" data-price="$8.00" data-collection="June 2026"
             data-front="art_files/june_2026/Shortcake_recipe.png"
-            data-back="art_files/june_2026/Shortcake_recipe_back.png"
-            onclick="openModal(this)">
-            <img src="art_files/june_2026/Shortcake_recipe.png" alt="Shortcake Recipe" onerror="this.style.display='none'">
+            data-back="art_files/june_2026/Shortcake_recipe_back.png" onclick="openModal(this)">
+            <img src="art_files/june_2026/Shortcake_recipe.png" alt="Shortcake Recipe"
+              onerror="this.style.display='none'">
           </button>
- 
+
         </div>
       </div>
     </section>
   </main>
- 
-  <!-- MODAL — sits outside main, once before </body> -->
+
+  <!-- WELCOME POPUP — appears on page load, click outside to dismiss -->
+  <div class="welcome-overlay" id="welcomeOverlay" onclick="closeWelcome(event)">
+    <div class="welcome-box">
+
+      <button class="welcome-close" onclick="closeWelcomeBtn()" aria-label="Close">
+        <svg viewBox="0 0 24 24">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+
+      <!-- LEFT: text -->
+      <div class="landing-info">
+        <span class="landing-title">Welcome to my shop!</span>
+        <div class="landing-divider"></div>
+        <p class="landing-text">I started this business with the intention of sharing my art with
+          the world to hopefully inspire others to create something of their own as well. All items are available on
+          Etsy. I hope you find as much joy
+          through my art as I found creating it!</p>
+      </div>
+
+      <!-- RIGHT: single image -->
+      <div class="landing-image">
+        <img src="art_files/june_2026/Cbe-back-business.png" alt="Thank you card">
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MODAL —-->
   <div class="modal-overlay" id="shopModal" onclick="closeModalOutside(event)">
     <div class="modal-box">
- 
+
       <!-- LEFT: text -->
       <div class="modal-info">
         <span class="modal-tag" id="modal-tag"></span>
@@ -116,15 +131,15 @@
         <div class="modal-divider"></div>
         <p class="modal-desc" id="modal-desc"></p>
       </div>
- 
+
       <!-- RIGHT: front + back image panels -->
       <div class="modal-images" id="modal-images">
         <div class="modal-panel" id="modal-front">
           <div class="modal-panel-placeholder">
             <svg viewBox="0 0 24 24">
-              <rect x="3" y="3" width="18" height="18" rx="2"/>
-              <circle cx="8.5" cy="8.5" r="1.5"/>
-              <path d="M21 15l-5-5L5 21"/>
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <circle cx="8.5" cy="8.5" r="1.5" />
+              <path d="M21 15l-5-5L5 21" />
             </svg>
             Front of card
           </div>
@@ -133,20 +148,20 @@
         <div class="modal-panel" id="modal-back">
           <div class="modal-panel-placeholder">
             <svg viewBox="0 0 24 24">
-              <rect x="3" y="3" width="18" height="18" rx="2"/>
-              <circle cx="8.5" cy="8.5" r="1.5"/>
-              <path d="M21 15l-5-5L5 21"/>
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <circle cx="8.5" cy="8.5" r="1.5" />
+              <path d="M21 15l-5-5L5 21" />
             </svg>
             Back of card
           </div>
           <div class="modal-panel-label">Back</div>
         </div>
       </div>
- 
+
     </div>
   </div>
- 
-  <!-- JS loaded last, after all HTML -->
+
   <script src="art_shop.js"></script>
 </body>
+
 </html>
